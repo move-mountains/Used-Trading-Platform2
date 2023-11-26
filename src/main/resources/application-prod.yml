@@ -1,15 +1,15 @@
+server:
+  port: 8099
 spring:
-  profiles:
-    active: dev
-  application:
-    name: my
-
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:4307/c2c?characterEncoding=utf8&useUnicode=true
+    username: root
+    password: NDWSwhsy
 #  mvc:
 #    static-path-pattern: classpath:/resources/static/**
 #  resources:
 #    static-locations: classpath:/resources/static/**
-mybatis:
-  mapper-locations: classpath:mapping/*.xml
 
 logging:
   level:
@@ -26,3 +26,8 @@ logging:
 #    rollingpolicy:
 #      max-history: 60
 #  path: ./logs
+my:
+  file:
+    saveImage: /toImage/
+    saveThumbnails: /toImage/thumbnails/
+    save: /home/web_server #文件保存的系统盘，例如D盘则为D，C盘则C
