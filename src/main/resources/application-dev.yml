@@ -11,7 +11,6 @@ spring:
     default-property-inclusion: non_null
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-#    url: jdbc:mysql://124.222.98.131:4307/c2c?characterEncoding=utf8&useUnicode=true
     url: jdbc:mysql://124.222.98.131:4307/c2c?characterEncoding=utf8&useUnicode=true
     username: root
     password: NDWSwhsy
